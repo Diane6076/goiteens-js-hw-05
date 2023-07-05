@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- #1 -->
+    <section>
+        <button type="button" class="buttonn" data-action="open-modal">Відкрити модальку</button>
+
+        <div class="backdrop">
+            <div class="modal">
+                <h2>Modal Window</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Similique voluptatibus fugit consequuntur aspernatur cum minus tenetur
+                     atque esse odio impedit, deleniti,
+                     corrupti delectus pariatur voluptate quas itaque 
+                     quia eaque asperiores!
+                     rem ipsum dolor sit amet consectetur adipisicing elit.
+                     Similique voluptatibus fugit consequuntur aspernatur cum minus tenetur
+                      atque esse odio impedit, deleniti,
+                      corrupti delectus pariatur voluptate quas itaque 
+                      quia eaque asperiores!</p>
+        <button type="button" class="btnn" data-action="close-modal">Закрити модальку</button>
+        </div>
+        </div>
+    </section>
+
+    <!-- #2 -->
+     <section> 
+    <p>Choose a color:</p>
+    <label for="red">
+    <input type="radio" name="color" value="red" onchange="changeBackgroundColor(this.value)">
+    red</label>
+
+    <label for="white">
+    <input type="radio" name="color" value="white" onchange="changeBackgroundColor(this.value)">
+    white</label>
+
+    <label for="green">
+    <input type="radio" name="color" value="green" onchange="changeBackgroundColor(this.value)">
+    green</label>
+</section>
+
+<!-- #4 -->
+<section>
+  <input type="text" placeholder="Ваше імя?" id="validation-input" data-length="6" >
+ <h1>Привіт,<span id="name-output">незнайомець</span></h1> 
+</section>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
