@@ -1,12 +1,11 @@
-Body .show_modal .modal{
+body.show-modal .backdrop{
     opacity: 1;
     visibility:visible;
     pointer-events: initial;
 }
 
-Body .show_modal .modal{
-transform: scale(1);
-
+body.show-modal .modal{
+    transform: scale(1);
 }
 
 .backdrop{
@@ -18,8 +17,9 @@ transform: scale(1);
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #fff;
+    background-color:rgba(0, 0, 0, 3);
     z-index: 999;
+
     pointer-events: none;
     opacity: 0;
     visibility: hidden;
@@ -31,7 +31,10 @@ transform: scale(1);
     border-radius: 4px;
     min-width: 640px;
     width: 100%;
-    min-height: 300px;
+    min-height: 320px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 2), 0px 1px 1px 0px rgba(0, 0, 0, 14), 0px 2px 1px -1px rgba(0, 0, 0, 12) ;
+   
     transform: scale(1.1);
     transition: transform 200ms ease-in-out;
 }

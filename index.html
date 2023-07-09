@@ -11,7 +11,7 @@
     <section>
         <button type="button" class="buttonn" data-action="open-modal">Відкрити модальку</button>
 
-        <div class="backdrop">
+        <div class="backdrop ">
             <div class="modal">
                 <h2>Modal Window</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -24,7 +24,7 @@
                       atque esse odio impedit, deleniti,
                       corrupti delectus pariatur voluptate quas itaque 
                       quia eaque asperiores!</p>
-        <button type="button" class="btnn" data-action="close-modal">Закрити модальку</button>
+        <button type="button" class="button" data-action="close-modal">Закрити модальку</button>
         </div>
         </div>
     </section>
@@ -47,10 +47,16 @@
 
 <!-- #4 -->
 <section>
-  <input type="text" placeholder="Ваше імя?" id="validation-input" data-length="6" >
- <h1>Привіт,<span id="name-output">незнайомець</span></h1> 
+  <input type="text" placeholder="Ваше імя?" id="name-input" data-length="6" >
+ <h1>Привіт,<span id="name-output">незнайомець</span>!</h1> 
 </section>
 
+<!-- #5 -->
+<section>
+    <input type="range" id="font-size-control" min="10" max="50" step="1" oninput="updateFontSize()">
+  <br>
+  <span id="text">dhfhfshh idisjb </span>
+</section>
 
     <script src="js/main.js"></script>
 </body>
