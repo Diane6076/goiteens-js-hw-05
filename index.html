@@ -33,29 +33,31 @@
      <section> 
     <p>Choose a color:</p>
     <label for="red">
-    <input type="radio" name="color" value="red" onchange="changeBackgroundColor(this.value)">
+    <input type="radio" name="color" value="red" class="red">
     red</label>
 
     <label for="white">
-    <input type="radio" name="color" value="white" onchange="changeBackgroundColor(this.value)">
+    <input type="radio" name="color" value="white" class="white" checked>
     white</label>
 
     <label for="green">
-    <input type="radio" name="color" value="green" onchange="changeBackgroundColor(this.value)">
+    <input type="radio" name="color" value="green" class="green">
     green</label>
+
+
 </section>
 
 <!-- #4 -->
 <section>
   <input type="text" placeholder="Ваше імя?" id="name-input" data-length="6" >
- <h1>Привіт,<span id="name-output">незнайомець</span>!</h1> 
+ <h1>Привіт, <span id="name-output">незнайомець</span>!</h1> 
 </section>
 
 <!-- #5 -->
 <section>
-    <input type="range" id="font-size-control" min="10" max="50" step="1" oninput="updateFontSize()">
+    <input type="range" id="font-size-control" min="10" max="50" step="1">
   <br>
-  <span id="text">dhfhfshh idisjb </span>
+  <span id="text">TEXT </span>
 </section>
 
     <script src="js/main.js"></script>
