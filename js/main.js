@@ -46,6 +46,20 @@ input.addEventListener("input", () => {
   }
 });
 
+const inputs = document.querySelector('#name-input') 
+inputs.addEventListener('blur', validateInput)
+
+function validateInput() {
+  const inputValue = inputs.value.trim();
+  const expectedLenght = 6;
+
+  if (inputValue.lenght === expectedLenght) {
+  inputs.style.border = '3px solid green'
+} else{
+    inputs.style.border = '3px solid red'
+}
+}
+
 // 5#
  const fontSizeControl = document.querySelector('#font-size-control')
  const text = document.querySelector('#text')
